@@ -71,13 +71,13 @@ public class DSSinhVien {
         ds.inDSSinhVien();
 
         System.out.println("\nTop M sinh viên trẻ nhất:");
-        ds.inTopMSinhVien(5, SinhVien.compareByNgaySinh());
+        ds.inTopMSinhVien(1, SinhVien.compareByNgaySinh());
 
         System.out.println("\nTop M sinh viên điểm TBC cao nhất:");
-        ds.inTopMSinhVien(5, SinhVien.compareByDiemTBC());
+        ds.inTopMSinhVien(1, SinhVien.compareByDiemTBC());
 
         System.out.println("\nTop M sinh viên theo tên:");
-        ds.inTopMSinhVien(5, SinhVien.compareByTen());
+        ds.inTopMSinhVien(1, SinhVien.compareByTen());
 
         
     }

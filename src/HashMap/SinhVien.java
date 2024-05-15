@@ -72,7 +72,7 @@ public class SinhVien implements Comparable<SinhVien>
 
 	@Override
 	public String toString() {
-		return "SinhVien:" + hoDem +  ten + "ngaySinh=" + ngaySinh;
+		return "SinhVien:" + hoDem +" " +ten + " ngaySinh=" + ngaySinh;
 	}
     
     

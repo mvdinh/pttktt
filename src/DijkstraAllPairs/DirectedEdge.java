@@ -1,8 +1,8 @@
 package DijkstraAllPairs;
-
+// cạnh có hướng O(1)
 public class DirectedEdge {
-	private int v, w;
-	private double weight;
+	private int v, w;  //điểm đầu, điểm cuối
+	private double weight;  //trọng số
 	public DirectedEdge(int v, int w, double weight) {
 		this.v = v;
 		this.w = w;

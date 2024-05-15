@@ -14,19 +14,6 @@ public class SinhVien implements Comparable<SinhVien>
     
     
     
-	public SinhVien(String hoDem, String ten, VNDate ngaySinh, double diemTBC) {
-		super();
-		this.hoDem = hoDem;
-		this.ten = ten;
-		this.ngaySinh = ngaySinh;
-		DiemTBC = diemTBC;
-	}
-	
-	public SinhVien() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-
 	public String getHoDem() {
 		return hoDem;
 	}
@@ -56,12 +43,24 @@ public class SinhVien implements Comparable<SinhVien>
 	}
 
 	public void setDiemTBC(double diemTBC) {
-		this.DiemTBC = diemTBC;
+		DiemTBC = diemTBC;
 	}
 
+	public SinhVien(String hoDem, String ten, VNDate ngaySinh, double diemTBC) {
+		super();
+		this.hoDem = hoDem;
+		this.ten = ten;
+		this.ngaySinh = ngaySinh;
+		DiemTBC = diemTBC;
+	}
+	
+	public SinhVien() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	@Override
 	public String toString() {
-		return "SinhVien:" + hoDem +  ten + "ngaySinh=" + ngaySinh;
+		return "SinhVien:" + hoDem +  ten + " ngaySinh=" + ngaySinh +" "+  DiemTBC;
 	}
     
 	 @Override
